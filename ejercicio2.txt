@@ -1,0 +1,41 @@
+INICIO
+    alumnos:
+        alumno:
+            nombre: "rafa"
+            materias:
+                nombre: "historia"
+                cal: 80
+                nombre: "matematicas"
+                cal: 50
+                nombre: "civismo"
+                cal: 100
+        alumno:
+            nombre: "karla"
+            materias:
+                nombre: "administracion"
+                cal: 100
+                nombre: "ventas"
+                cal: 50
+                nombre: "programacion"
+                cal: 90
+        alumno:
+            nombre: "morita"
+            materias:
+                nombre: "calculo"
+                cal: 30
+                nombre: "historia"
+                cal: 80
+                nombre: "administracion"
+                cal: 50
+    contadorAlumnos = 0
+    contadorMaterias = 0
+    MIENTRAS contadorAlumnos<longitudAlumnos ENTONCES
+        ESCRIBE alumnos[contador].nombre
+        MIENTRAS contadorMaterias<longitudMaterias de Alumno ENTONCES
+            SI alumnos[contadorAlumnos].materias[contadorMaterias] >0
+                ESCRIBE alumnos[contador].materias[contadorMaterias].nombre
+            FIN SI
+            contadorMaterias = contadorMaterias + 1
+        FIN MIENTRAS
+        contadorAlumnos = contadorAlumnos + 1
+    FIN MIENTRAS

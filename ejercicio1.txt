@@ -1,0 +1,31 @@
+INICIO
+    alumnos:
+        alumno:
+            nombre: "rafa"
+            cal1: 80
+            cal2: 90
+            cal3: 50
+        alumno:
+            nombre: "karla"
+            cal1: 100
+            cal2: 70
+            cal3: 70
+        alumno:
+            nombre: "morita"
+            cal1: 50
+            cal2: 90
+            cal3: 100
+    contador = 0
+    alumnosAprobados[]
+    
+    MIENTRAS contador<=longitudAlumnos ENTONCES
+        promedio = alumnos[contador].cal1 + alumnos[contador].cal2 + alumnos[contador].3 / longitudAlumnos
+        SI promedio > 60 ENTONCES
+            alumnosAprobados[contador] = alumnos[contador.nombre]
+        SINO
+            alumnosReprobados[contador] = alumnos[contador.nombre]
+        FIN SI
+        contador = contador + 1
+    FIN MIENTRAS
+    ESCRIBE alumnosAprobados 
+    
